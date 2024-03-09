@@ -276,7 +276,7 @@ nav {
 
 
 .page2{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
     position: relative;
