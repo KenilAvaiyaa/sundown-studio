@@ -272,7 +272,7 @@ nav {
 
 
 
-
+/* page 2 */
 
 
 .page2{
@@ -280,7 +280,7 @@ nav {
     width: 100%;
     background-color: #EFEAE3;
     position: relative;
-    padding: 4vw 0;
+    padding-top: 4vw;
 }
 
 #moving-text {
@@ -322,6 +322,78 @@ nav {
     }
 }
 
+.page2-bottom{
+    height: 100vh;
+    width: 100%;
+    background-color: #FE330A;
+    padding-inline: 32px;
+    display: flex;
+}
+.b-left{
+    height: 100%;
+    width: 64%;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 30px;
+    background-color: antiquewhite;
+}
+
+.b-left .text{
+    height: 90%;
+    margin: 1.5vw 1.5vw;
+}
+
+.b-left .text h1{
+    padding-top: 9.5vw ;
+    font-family:"med-text";
+    font-size: 4vw;
+    letter-spacing: -1px;
+    line-height: 4vw;
+}
+
+.b-left h5{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.3vw;
+    font-size: 0.7vw;
+    font-family: "low-text";
+}
+
+.b-left h5 #round{
+    height: 8px;
+    width: 8px;
+    background-color: #FE320A;
+    border-radius: 50%;
+}
+
+.b-right{
+    height: 100%;
+    width: 36%;
+    background-color: rgb(176, 114, 33);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4vw;
+    align-items: center;
+}
+
+.b-right .images img{
+    height: 250px;
+    width: 350px;
+    background-color: #FE320A;
+    border-radius: 30px;
+    background-position: center;
+    object-fit: cover;
+    
+}
+
+.b-right p{
+    height: 250px;
+    width: 350px;
+    font-family: "low-text";
+    font-size: 1.1vw;
+}
 
 
 
