@@ -19,7 +19,7 @@ body {
     height: 100%;
     width: 100%;
     color: #0b0500;
-    background-color :#EFEAE3;
+    /* background-color :#EFEAE3; */
     /* font-family: ; */
 }
 
@@ -75,8 +75,11 @@ body {
 
 }
 
-
-
+.main {
+    /* background-color: #000; */
+    position: relative;
+    z-index: 10;
+}
 /* page1  */
 .page1 {
     min-height: 100vh;
@@ -142,7 +145,7 @@ nav {
     position: relative;
     text-decoration: none;
     color: #000000bb;
-    z-index: 9;
+    z-index: 11;
 }
 
 .page1 .intro {
@@ -180,7 +183,6 @@ nav {
 .page1 video {
     position: relative;
     width: 100%;
-    /* padding-inline: 32px; */
     border-radius: 20px;
     margin-top: 4vw;
     z-index:22 ;
@@ -193,9 +195,7 @@ nav {
     right: 0;
     top: 60vh;
     overflow: hidden;
-    /* background-color: #FE330A; */
     background: transparent;
-    /* z-index: 99; */
 }
 
 .shape .shape-1 {
@@ -207,7 +207,7 @@ nav {
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     overflow: hidden;
-    z-index: 1;
+    z-index: 11;
     filter: blur(20px);
     background: rgb(254, 51, 10);
     background: radial-gradient(circle, rgba(254, 51, 10, 1) 0%, rgba(254, 67, 16, 0.6895133053221288) 100%, rgba(255, 152, 50, 1) 100%);
@@ -224,7 +224,7 @@ nav {
     right: 30vw;
     border-radius: 50%;
     filter: blur(20px);
-    z-index: 1;
+    z-index: 11;
     /* background-color: blue; */
     background: rgb(254, 51, 10);
     background: linear-gradient(90deg, rgba(254, 51, 10, 1) 0%, rgba(254, 67, 16, 1) 34%, rgba(255, 152, 50, 1) 81%);
@@ -342,7 +342,7 @@ nav {
     height: 70%;
     width: 50%;
     margin: 1.5vw 1.5vw;
-    z-index: 9;
+    z-index: 11;
 }
 
 .b-left .text h1{
@@ -461,13 +461,9 @@ nav {
     min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
-    /* background-color: transparent; */
     
 }
 
-/* .elem-container{
-    background-color: salmon;
-} */
 
 .overlay{
     height: 100%;
@@ -496,6 +492,7 @@ nav {
     background-position: center;
     background-size: cover;
     transition: all ease 0.2s;
+    z-index: 98;
 
 }
 
@@ -574,13 +571,174 @@ nav {
     position: relative;
     text-decoration: none;
     color: #000000bb;
-    z-index: 9;
+    z-index: 11;
+}
+
+.page4{
+    height: 100vh;
+    padding: 3vw 3vw;
+    width: 100%;
+    background-color: #EFEAE3;
 }
 
 
 
+.page5{
+    height: 60vh;
+    width: 100%;
+    background-color: #EFEAE3;
+}
+
+.page6{
+    height: 90vh;
+    width: 100%;
+    /* background-color: red; */
+}
+
+footer {
+    position: fixed;
+    z-index: 9;
+    height: 90vh;
+    width: 100%;
+    bottom: 0;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 3vw;
+    /* justify-content: ; */
+    /* align-items: center; */
+}
+
+footer .top{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.top h3{
+    font-family: "med-text";
+    font-size: 2vw;
+    padding: 0px 3vw;
+}
+
+.top-right{
+    padding-right: 3vw;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    gap:5vh;
+    
+}
+.top h4{
+    font-family: "low-text";
+    font-size: 1.3vw;
+}
+
+.top-right .submit{
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #504B45;
+}
+.top #email{
+    padding: 4px 2px;
+    border: none;
+    background-color: transparent;
+}
+.top button{
+    border: none;
+    color: white;
+    background-color: transparent;
+}
 
 
+footer h1{
+    font-family: "med-text";
+    font-size: 21vw;
+    z-index: 10;
+    border-bottom:1px solid #504B45 ;
+}
+
+footer .bot{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bot h5{
+    font-family: "low-text";
+    font-size: 1.1vw;
+    color: white;
+}
+
+.bot h5:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+}
+.foote-shape{
+    position: absolute;
+    height: 100%;
+    background-color:transparent;
+    width: 100%;
+}
+.foote-shape .fshap1{
+    position: absolute;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 60% ;
+    border-bottom-right-radius: 30%;
+    height: 50%;
+    width: 70%;
+    top:-10%;
+    left:-20%;
+    background-color: #FF3B10;
+    filter: blur(120px);
+    animation: footerani 2s linear  infinite;
+    animation-direction: alternate;
+
+}
+.foote-shape .fshap2{
+        position: absolute;
+        border-top-left-radius: 10px ;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 90% ;
+        border-bottom-right-radius: 20%;
+        filter: blur(120px);
+        height: 70%;
+        width: 70%;
+        top: -10%;
+        right: 0%;
+        background-color: #FF3B10;
+        animation: footerani2 5s linear  infinite;
+    animation-direction: alternate;
+}
+
+@keyframes footerani {
+    from{
+        transform: translate(0%,-10%);
+    }
+    to{
+        transform: translate(0%,2%);
+    }
+    
+}
+@keyframes footerani2 {
+    from{
+        transform: rotate(10deg);
+    }
+    to{
+        transform: rotate(-3deg);
+    }
+    
+}
 
 
 
