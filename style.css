@@ -118,6 +118,10 @@ nav {
     overflow: hidden;
     transition: all ease 0.4s;
 }
+nav h3{
+    font-family: "loe-text";
+    display: none;
+}
 
 .nav-right h4::after {
     content: "";
@@ -857,7 +861,38 @@ footer .bot{
 
 
 @media (max-width:600px) {
+
     .loder h1 {
-        font-size: 2em;
+        font-size: 3em;
     }
+
+    .page1 {
+        min-height: 100vh;
+        width: 100vw;
+        padding: 0 0vw;
+    }
+
+    nav {
+        padding: 8vw 5vw;
+        background-color: #EFEAE3;
+    }
+    
+    nav img{
+        height: 6vh;
+    }
+    .nav-right {       
+        display: none;
+    }
+
+    nav h3{
+        font-family: "low-text";
+        font-size: 4vw;
+        padding: 3vw 4vw;
+        border: 1px solid #C1BCB5;
+        border-radius: 50px;
+        display: block;
+        padding-left: 10vw;
+    }
+    
+
 }
