@@ -611,18 +611,21 @@ nav {
 
 .workname h1{
     font-size: 2vw;
-    color: #433C37;
-    
+    color: #433C37; 
 }
 
-.workname h1:nth-child(1){
+.workname h1:hover{
     color: white;
 }
 
+.workinfo{
+    transition: all ease 1s;
+}
 .workinfo p{
     margin-inline: 10vw;
     font-family: "low-text";
     font-size: 1vw;
+    
 }
 
 .work-right{
@@ -636,6 +639,7 @@ nav {
     background-position: center;
     background-size: cover;
     background-image: url(https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15e1_Project.webp);
+    transition: all ease 1s;
 }
 
 

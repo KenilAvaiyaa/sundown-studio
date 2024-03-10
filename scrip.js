@@ -102,17 +102,15 @@ swap()
 // page4
 
 var work_img = document.querySelector(".work-right")
-var work_info = document.querySelector("workinfo .chnage")
+var work_info = document.querySelector(".workinfo")
 
 var work_name = document.querySelectorAll(".workname h1")
-var flag = 0
+
 work_name.forEach((ele)=>{
     ele.addEventListener ('click' , function (){
             var addimg = ele.getAttribute("data-images")
         var addtext = ele.getAttribute("data-info")
-        console.log(addtext)
-        // ele.style.color="red"
         work_img.style.backgroundImage= `url(${addimg})`;
-        work_info.innerHTML = dataset.addtext;
+        work_info.innerHTML = `<p>${addtext}</p>`
     })
 })
