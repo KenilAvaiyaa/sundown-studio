@@ -88,29 +88,51 @@ function page3scroll() {
 page3scroll()
 
 
+// page4
+function showHide() {
+    var work_img = document.querySelector(".work-right")
+    var work_info = document.querySelector(".workinfo")
+
+    var work_name = document.querySelectorAll(".workname h1")
+
+    work_name.forEach((ele) => {
+        ele.addEventListener('click', function () {
+            var addimg = ele.getAttribute("data-images")
+            var addtext = ele.getAttribute("data-info")
+            work_img.style.backgroundImage = `url(${addimg})`;
+            work_info.innerHTML = `<p>${addtext}</p>`
+        })
+    })
+    // click change white color
+    var tx1 = document.querySelector("#h1t")
+    var tx2 = document.querySelector("#h2t")
+    var tx3 = document.querySelector("#h3t")
+
+    tx1.addEventListener('click', function () {
+        tx1.style.color = "white"
+        tx2.style.color = "#433C37"
+        tx3.style.color = "#433C37"
+    })
+    tx2.addEventListener('click', function () {
+        tx2.style.color = "white"
+        tx1.style.color = "#433C37"
+        tx3.style.color = "#433C37"
+    })
+    tx3.addEventListener('click', function () {
+        tx3.style.color = "white"
+        tx2.style.color = "#433C37"
+        tx1.style.color = "#433C37"
+    })
+}
+showHide()
+
+
 // swipper
-function swap(){
+function swap() {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3.6,
         spaceBetween: 20,
         freeMode: true,
-      });
+    });
 }
 swap()
-
-
-// page4
-
-var work_img = document.querySelector(".work-right")
-var work_info = document.querySelector(".workinfo")
-
-var work_name = document.querySelectorAll(".workname h1")
-
-work_name.forEach((ele)=>{
-    ele.addEventListener ('click' , function (){
-            var addimg = ele.getAttribute("data-images")
-        var addtext = ele.getAttribute("data-info")
-        work_img.style.backgroundImage= `url(${addimg})`;
-        work_info.innerHTML = `<p>${addtext}</p>`
-    })
-})

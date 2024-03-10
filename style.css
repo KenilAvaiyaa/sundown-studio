@@ -610,12 +610,18 @@ nav {
 }
 
 .workname h1{
-    font-size: 2vw;
+    font-size: 4vw;
     color: #433C37; 
 }
-
+.workname h1:nth-child(1){
+    color: white;
+}
 .workname h1:hover{
     color: white;
+}
+
+.workname h1:active{
+    color: white ;
 }
 
 .workinfo{
