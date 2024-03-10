@@ -19,7 +19,7 @@ body {
     height: 100%;
     width: 100%;
     color: #0b0500;
-    /* background-color : black; */
+    background-color :#EFEAE3;
     /* font-family: ; */
 }
 
@@ -339,7 +339,7 @@ nav {
 
 .b-left .text{
     position: absolute;
-    height: 90%;
+    height: 70%;
     width: 50%;
     margin: 1.5vw 1.5vw;
     z-index: 9;
@@ -461,17 +461,55 @@ nav {
     min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
-    position: relative;
+    /* background-color: transparent; */
+    
 }
- 
+
+/* .elem-container{
+    background-color: salmon;
+} */
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color:#FF9832;
+    position: absolute;
+    left: 0;
+    top:-100%;
+    transition: all ease 0.4s;
+}
+
+.elem:hover .overlay{
+    top:0;
+}
+
+.fix-image{
+    height: 28vw;
+    width: 22vw;
+    /* background-color: #FE320A; */
+    border-radius: 30px;
+    position: fixed;
+    z-index: 60;
+    left: 50%;
+    top: 5%;
+    display: none;
+    background-position: center;
+    background-size: cover;
+    transition: all ease 0.2s;
+
+}
+
+
 .page3 .elem{
     padding-inline: 3vw;
     height: 15vh;
     width: 100%;
+    position: relative;
     border-bottom: 1px solid #908C89;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 .elem h1{
@@ -538,6 +576,7 @@ nav {
     color: #000000bb;
     z-index: 9;
 }
+
 
 
 
