@@ -914,9 +914,6 @@ footer .bot {
     .loder h1 {
         font-size: 3em;
     }
-    .main{
-        overflow: hidden;
-    }
     /* page1 ::::::::::::::::::::::::::::::: */
     .page1 {
         min-height: 100vh;
@@ -1287,7 +1284,7 @@ footer .bot {
     }
 
     .workname h1 {
-        font-size: 7vw;
+        font-size: 6.5vw;
     }
 
     .workinfo p {
@@ -1321,7 +1318,7 @@ footer .bot {
         margin-top: 3vw;
         height: 80%;
         padding-top: 15vh;
-        width: 1000px;
+        width: 250%;
     }
 
     .content p {
