@@ -877,7 +877,7 @@ footer .bot {
 }
 
 .fixmenu .menutop {
-    height: 40vh;
+    height: 45vh;
     width: 100%;
     background-color: #EFEAE3;
     border-bottom-left-radius: 50px;
@@ -887,7 +887,7 @@ footer .bot {
 .fixmenu .menutop .menu-text {
     height: 100%;
     width: 100%;
-    margin-top: 5vw;
+    margin-top: 10vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -896,7 +896,7 @@ footer .bot {
 
 .fixmenu .menutop h1 {
     margin-right: 4vw;
-    font-size: 13vw;
+    font-size: 14vw;
     font-family: "med-text";
     text-transform: uppercase;
     text-align: right;
@@ -914,7 +914,9 @@ footer .bot {
     .loder h1 {
         font-size: 3em;
     }
-
+    .main{
+        overflow: hidden;
+    }
     /* page1 ::::::::::::::::::::::::::::::: */
     .page1 {
         min-height: 100vh;
@@ -1096,11 +1098,12 @@ footer .bot {
 
     .b-left .text h1 {
         padding-top: 9.5vw;
+        width: 90%;
         font-family: "med-text";
-        font-size: 6.5vw;
+        font-size: 6vw;
         text-align: left;
         letter-spacing: -1px;
-        line-height: 6.6vw;
+        line-height: 6vw;
     }
 
     .shape-s1 {
@@ -1185,8 +1188,8 @@ footer .bot {
     }
 
     .b-right .images img {
-        height: 150px;
-        width: 250px;
+        height: 20vh;
+        width: 70vw;
         border-radius: 10px;
     }
 
@@ -1194,7 +1197,7 @@ footer .bot {
         height: 170px;
         width: 252px;
         font-family: "low-text";
-        font-size: 3vw;
+        font-size: 2.8vw;
     }
 
 
