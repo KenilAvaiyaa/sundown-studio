@@ -19,10 +19,12 @@ body {
     height: 100%;
     width: 100%;
     color: #0b0500;
-    background-color :#EFEAE3;
+    background-color: #EFEAE3;
     /* font-family: ; */
 }
 
+
+/* loder slide */
 .loder {
     height: 100%;
     width: 100%;
@@ -72,15 +74,15 @@ body {
     100% {
         opacity: 0%;
     }
-
 }
 
 .main {
-    /* background-color: #000; */
     position: relative;
     z-index: 10;
 }
-/* page1  */
+
+
+/* page1 :::::::::::::::::::::::::::: */
 .page1 {
     min-height: 100vh;
     width: 100%;
@@ -92,11 +94,13 @@ body {
 nav {
     height: 100px;
     padding-top: 32px;
-    /* padding-inline: 32px; */
     width: 100%;
+    position: relative;
+    background-color: #EFEAE3;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
 }
 
 .nav-right {
@@ -118,7 +122,8 @@ nav {
     overflow: hidden;
     transition: all ease 0.4s;
 }
-nav h3{
+
+nav h3 {
     font-family: "loe-text";
     display: none;
 }
@@ -154,7 +159,6 @@ nav h3{
 
 .page1 .intro {
     height: 75vh;
-    /* margin-inline: 32px; */
     border-bottom: 1.5px solid #C1BCB5;
     display: flex;
     justify-content: space-between;
@@ -189,7 +193,7 @@ nav h3{
     width: 100%;
     border-radius: 20px;
     margin-top: 4vw;
-    z-index:22 ;
+    z-index: 22;
 }
 
 .page1 .shape {
@@ -229,7 +233,6 @@ nav h3{
     border-radius: 50%;
     filter: blur(20px);
     z-index: 11;
-    /* background-color: blue; */
     background: rgb(254, 51, 10);
     background: linear-gradient(90deg, rgba(254, 51, 10, 1) 0%, rgba(254, 67, 16, 1) 34%, rgba(255, 152, 50, 1) 81%);
     animation: ani1 4s linear infinite;
@@ -241,7 +244,6 @@ nav h3{
     height: 35vw;
     filter: blur(20px);
     right: 0;
-    /* background-color: pink; */
     background: rgb(254, 51, 10);
     background: radial-gradient(circle, rgba(254, 51, 10, 1) 13%, rgba(254, 67, 16, 1) 34%, rgba(255, 152, 50, 1) 81%);
     border-radius: 50px;
@@ -270,17 +272,8 @@ nav h3{
 }
 
 
-
-
-
-
-
-
-
-/* page 2 */
-
-
-.page2{
+/* page 2 ::::::::::::::::::::::::::::::::::: */
+.page2 {
     min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
@@ -318,22 +311,24 @@ nav h3{
     margin: 1vw 2vw;
 }
 
-@keyframes move{
-    0%{
+@keyframes move {
+    0% {
         transform: translateX(0%);
     }
-    100%{
+
+    100% {
         transform: translateX(-100%);
     }
 }
 
-.page2-bottom{
+.page2-bottom {
     height: 100vh;
     width: 100%;
     padding-inline: 32px;
     display: flex;
 }
-.b-left{
+
+.b-left {
     height: 100%;
     width: 64%;
     display: flex;
@@ -341,7 +336,7 @@ nav h3{
     padding-inline: 30px;
 }
 
-.b-left .text{
+.b-left .text {
     position: absolute;
     height: 70%;
     width: 50%;
@@ -349,15 +344,15 @@ nav h3{
     z-index: 11;
 }
 
-.b-left .text h1{
-    padding-top: 9.5vw ;
-    font-family:"med-text";
+.b-left .text h1 {
+    padding-top: 9.5vw;
+    font-family: "med-text";
     font-size: 4vw;
     letter-spacing: -1px;
     line-height: 4vw;
 }
 
-.shape-s1{
+.shape-s1 {
     height: 35vw;
     width: 35vw;
     border-radius: 50%;
@@ -366,12 +361,12 @@ nav h3{
     background: linear-gradient(90deg, rgba(254, 51, 10, 1) 0%, rgba(254, 67, 16, 1) 34%, rgba(255, 152, 50, 1) 81%);
     position: absolute;
     top: 45%;
-    left:24%;
+    left: 24%;
     animation: loopshape2 4s linear infinite;
     animation-direction: alternate;
 }
 
-.shape-s2{
+.shape-s2 {
     height: 32vw;
     width: 32vw;
     border-radius: 50%;
@@ -379,33 +374,35 @@ nav h3{
     background: rgb(254, 51, 10);
     position: absolute;
     top: 50%;
-    left:20%;
+    left: 20%;
     animation: loopshape2 4s linear infinite;
     animation-direction: alternate;
 }
 
 
 @keyframes loopshape1 {
-    from{
-        transform: translate(7%,-7%)skew(0deg);
+    from {
+        transform: translate(7%, -7%)skew(0deg);
     }
-    to{
-        transform: translate(-5%,5%)skew(10deg);
+
+    to {
+        transform: translate(-5%, 5%)skew(10deg);
     }
-    
+
 }
 
 @keyframes loopshape2 {
-    from{
-        transform: translate(5%,-5%)skew(10deg);
+    from {
+        transform: translate(5%, -5%)skew(10deg);
     }
-    to{
-        transform: translate(-5%,5%)skew(0deg);
+
+    to {
+        transform: translate(-5%, 5%)skew(0deg);
     }
-    
+
 }
 
-.b-left h5{
+.b-left h5 {
     position: absolute;
     bottom: 2vw;
     display: flex;
@@ -416,7 +413,7 @@ nav h3{
     font-family: "low-text";
 }
 
-.b-left h5 #round{
+.b-left h5 #round {
     height: 8px;
     width: 8px;
     background-color: #FE330A;
@@ -425,7 +422,7 @@ nav h3{
 
 
 
-.b-right{
+.b-right {
     height: 100%;
     width: 36%;
     display: flex;
@@ -435,21 +432,21 @@ nav h3{
     align-items: center;
 }
 
-.b-right .images{
-    margin-top:250px;
+.b-right .images {
+    margin-top: 250px;
 }
 
-.b-right .images img{
+.b-right .images img {
     /* margin-top: vw; */
     height: 200px;
     width: 300px;
     border-radius: 30px;
     background-position: center;
     object-fit: cover;
-    
+
 }
 
-.b-right p{
+.b-right p {
     height: 250px;
     width: 350px;
     font-family: "low-text";
@@ -457,33 +454,30 @@ nav h3{
 }
 
 
-/* page3 */
-
-.page3{
+/* page3 ::::::::::::::::::::::::::::::: */
+.page3 {
     min-height: 100vh;
     width: 100%;
     min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
-    
 }
 
-
-.overlay{
+.overlay {
     height: 100%;
     width: 100%;
-    background-color:#FF9832;
+    background-color: #FF9832;
     position: absolute;
     left: 0;
-    top:-100%;
+    top: -100%;
     transition: all ease 0.4s;
 }
 
-.elem:hover .overlay{
-    top:0;
+.elem:hover .overlay {
+    top: 0;
 }
 
-.fix-image{
+.fix-image {
     height: 28vw;
     width: 22vw;
     /* background-color: #FE320A; */
@@ -497,11 +491,10 @@ nav h3{
     background-size: cover;
     transition: all ease 0.2s;
     z-index: 98;
-
 }
 
 
-.page3 .elem{
+.page3 .elem {
     padding-inline: 3vw;
     height: 15vh;
     width: 100%;
@@ -513,24 +506,25 @@ nav h3{
     overflow: hidden;
 }
 
-.elem h1{
+.elem h1 {
     font-family: "med-text";
     font-size: 3.5vw;
     text-transform: uppercase;
 }
 
-.elem .elem-right h5{
+.elem .elem-right h5 {
     text-transform: uppercase;
     font-family: "low-text";
     font-size: 1.2vw;
     text-align: right;
 }
-.elem .elem-right h5:nth-child(2){
+
+.elem .elem-right h5:nth-child(2) {
     color: #908C89;
     font-size: 0.9vw;
 }
 
-.page3-button{
+.page3-button {
     padding: 2vw 2vw;
     display: flex;
     justify-content: flex-start;
@@ -578,13 +572,16 @@ nav h3{
     z-index: 11;
 }
 
-.page4{
+
+/* page4 ::::::::::::::::::::::::::::::: */
+.page4 {
     height: 100vh;
     padding: 3vw 3vw;
     width: 100%;
     background-color: #EFEAE3;
 }
-.mywork{
+
+.mywork {
     height: 100%;
     width: 100%;
     position: relative;
@@ -592,7 +589,7 @@ nav h3{
     border-radius: 30px;
 }
 
-.work-left{
+.work-left {
     height: 100%;
     width: 45%;
     background-color: transparent;
@@ -602,7 +599,7 @@ nav h3{
     color: white;
 }
 
-.workname{
+.workname {
     margin-top: 10vw;
     margin-left: 10vw;
     cursor: pointer;
@@ -613,32 +610,34 @@ nav h3{
     align-items: flex-start;
 }
 
-.workname h1{
+.workname h1 {
     font-size: 4vw;
-    color: #433C37; 
+    color: #433C37;
 }
-.workname h1:nth-child(1){
-    color: white;
-}
-.workname h1:hover{
+
+.workname h1:nth-child(1) {
     color: white;
 }
 
-.workname h1:active{
-    color: white ;
+.workname h1:hover {
+    color: white;
 }
 
-.workinfo{
+.workname h1:active {
+    color: white;
+}
+
+.workinfo {
     transition: all ease 1s;
 }
-.workinfo p{
+
+.workinfo p {
     margin-inline: 10vw;
     font-family: "low-text";
     font-size: 1vw;
-    
 }
 
-.work-right{
+.work-right {
     width: 55%;
     height: 100%;
     top: 0;
@@ -652,14 +651,14 @@ nav h3{
     transition: all ease 1s;
 }
 
-
-.page5{
+/* page 5 ::::::::::::::::::::::::::::::: */
+.page5 {
     height: 60vh;
     width: 100%;
     background-color: #EFEAE3;
 }
 
-.page5 h5{
+.page5 h5 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -670,7 +669,7 @@ nav h3{
     font-family: "low-text";
 }
 
-.page5 h5 #round{
+.page5 h5 #round {
     height: 8px;
     width: 8px;
     background-color: #FE330A;
@@ -679,7 +678,7 @@ nav h3{
 
 .swiper {
     padding-top: 2vw;
-  }
+}
 
 .swiper-slide {
     text-align: center;
@@ -692,24 +691,28 @@ nav h3{
 }
 
 .swiper-slide .content {
-    padding-block: 1.5vw ;
+    padding-block: 1.5vw;
     border-left: 1px solid #BFBBB5;
     font-family: "low-text";
     font-size: 1vw;
-
 }
-.content p{
+
+.content p {
     padding-left: 2vw;
     text-align: left;
     font-weight: 50;
 }
 
-.page6{
+
+
+/* page6 ::::::::::::::::::::::::::::::: */
+.page6 {
     height: 90vh;
     width: 100%;
-    /* background-color: red; */
 }
 
+
+/* footer silde  */
 footer {
     position: fixed;
     z-index: 9;
@@ -721,11 +724,9 @@ footer {
     display: flex;
     flex-direction: column;
     padding-inline: 3vw;
-    /* justify-content: ; */
-    /* align-items: center; */
 }
 
-footer .top{
+footer .top {
     height: 50%;
     width: 100%;
     display: flex;
@@ -734,51 +735,54 @@ footer .top{
     z-index: 10;
 }
 
-.top h3{
+.top h3 {
     font-family: "med-text";
     font-size: 2vw;
     padding: 0px 3vw;
 }
 
-.top-right{
+.top-right {
     padding-right: 3vw;
     width: 25vw;
     display: flex;
     flex-direction: column;
-    gap:5vh;
-    
+    gap: 5vh;
+
 }
-.top h4{
+
+.top h4 {
     font-family: "low-text";
     font-size: 1.3vw;
 }
 
-.top-right .submit{
+.top-right .submit {
     width: 20vw;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #504B45;
 }
-.top #email{
+
+.top #email {
     padding: 4px 2px;
     border: none;
     background-color: transparent;
 }
-.top button{
+
+.top button {
     border: none;
     color: white;
     background-color: transparent;
 }
 
 
-footer h1{
+footer h1 {
     font-family: "med-text";
     font-size: 21vw;
     z-index: 10;
-    border-bottom:1px solid #504B45 ;
+    border-bottom: 1px solid #504B45;
 }
 
-footer .bot{
+footer .bot {
     height: 20%;
     width: 100%;
     display: flex;
@@ -786,86 +790,132 @@ footer .bot{
     align-items: center;
 }
 
-.bot h5{
+.bot h5 {
     font-family: "low-text";
     font-size: 1.1vw;
     color: white;
 }
 
-.bot h5:nth-child(2){
+.bot h5:nth-child(2) {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5vw;
 }
-.foote-shape{
+
+.foote-shape {
     position: absolute;
     height: 100%;
-    background-color:transparent;
+    background-color: transparent;
     width: 100%;
 }
-.foote-shape .fshap1{
+
+.foote-shape .fshap1 {
     position: absolute;
-    border-top-left-radius: 10px ;
+    border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border-bottom-left-radius: 60% ;
+    border-bottom-left-radius: 60%;
     border-bottom-right-radius: 30%;
     height: 50%;
     width: 70%;
-    top:-10%;
-    left:-20%;
+    top: -10%;
+    left: -20%;
     background-color: #FF3B10;
     filter: blur(120px);
-    animation: footerani 2s linear  infinite;
+    animation: footerani 2s linear infinite;
     animation-direction: alternate;
 
 }
-.foote-shape .fshap2{
-        position: absolute;
-        border-top-left-radius: 10px ;
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 90% ;
-        border-bottom-right-radius: 20%;
-        filter: blur(120px);
-        height: 70%;
-        width: 70%;
-        top: -10%;
-        right: 0%;
-        background-color: #FF3B10;
-        animation: footerani2 5s linear  infinite;
+
+.foote-shape .fshap2 {
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 20%;
+    filter: blur(120px);
+    height: 70%;
+    width: 70%;
+    top: -10%;
+    right: 0%;
+    background-color: #FF3B10;
+    animation: footerani2 5s linear infinite;
     animation-direction: alternate;
 }
 
 @keyframes footerani {
-    from{
-        transform: translate(0%,-10%);
+    from {
+        transform: translate(0%, -10%);
     }
-    to{
-        transform: translate(0%,2%);
+
+    to {
+        transform: translate(0%, 2%);
     }
-    
+
 }
+
 @keyframes footerani2 {
-    from{
+    from {
         transform: rotate(10deg);
     }
-    to{
+
+    to {
         transform: rotate(-3deg);
     }
-    
+
+}
+
+/* menu in phone screen */
+.fixmenu {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.413);
+    position: fixed;
+    z-index: 99;
+    top: -100%;
+    transition: all ease 0.8s;
+}
+
+.fixmenu .menutop {
+    height: 40vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.fixmenu .menutop .menu-text {
+    height: 100%;
+    width: 100%;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.fixmenu .menutop h1 {
+    margin-right: 4vw;
+    font-size: 13vw;
+    font-family: "med-text";
+    text-transform: uppercase;
+    text-align: right;
+    color: #000000;
 }
 
 
 
 
-
+/* responsiveness */
 
 @media (max-width:600px) {
 
+    /* loder */
     .loder h1 {
         font-size: 3em;
     }
 
+    /* page1 ::::::::::::::::::::::::::::::: */
     .page1 {
         min-height: 100vh;
         width: 100vw;
@@ -876,23 +926,482 @@ footer .bot{
         padding: 8vw 5vw;
         background-color: #EFEAE3;
     }
-    
-    nav img{
+
+    nav img {
         height: 6vh;
+        transition: all ease 0.5s;
     }
-    .nav-right {       
+
+    .nav-right {
         display: none;
     }
 
-    nav h3{
+    nav h3 {
         font-family: "low-text";
         font-size: 4vw;
         padding: 3vw 4vw;
         border: 1px solid #C1BCB5;
         border-radius: 50px;
         display: block;
-        padding-left: 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+        padding-left: 6vw;
     }
-    
+
+    nav h3 #m1 {
+        display: block;
+        transition: all ease-in-out 2s;
+    }
+
+    nav h3 #m2 {
+        display: none;
+        transition: all ease-in-out 2s;
+    }
+
+    .page1 .intro {
+        margin-inline: 3vw;
+        height: 45vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding-bottom: 3vw;
+        position: relative;
+        z-index: 10;
+    }
+
+    .intro #left h4 {
+        width: 80%;
+        font-size: 4.8vw;
+        line-height: 5vw;
+    }
+
+    .intro #left {
+        height: 30%;
+    }
+
+    .intro #right {
+        height: 70%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .intro #right h1 {
+        font-size: 12vw;
+        line-height: 11vw;
+        text-align: right;
+    }
+
+    .page1 video {
+        position: relative;
+        width: 90%;
+        margin-left: 5%;
+        height: 60vh;
+        border-radius: 15px;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+        z-index: 22;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .page1 .shape {
+        width: 76vw;
+        height: 50vw;
+        position: absolute;
+        right: 0;
+        top: 45vh;
+        background: transparent;
+    }
+
+    .shape .shape-1 {
+        top: 10vw;
+        right: -2vw;
+        border-radius: 50%;
+        filter: blur(10px);
+        background: rgb(254, 51, 10);
+        background: linear-gradient(90deg, rgba(254, 51, 10, 1) 0%, rgba(254, 67, 16, 1) 34%, rgba(255, 152, 50, 1) 81%);
+        animation: anime2 5s linear infinite;
+        animation-direction: alternate;
+    }
+
+    .shape .shape-2 {
+        top: 20vw;
+        right: 20vw;
+        filter: blur(10px);
+        z-index: 11;
+        background: rgb(254, 51, 10);
+        animation: ani1 5s linear infinite;
+        animation-direction: alternate;
+    }
+
+    .shape .shape-3 {
+        filter: blur(10px);
+        right: 0;
+        background: rgb(254, 51, 10);
+        background: radial-gradient(circle, rgba(254, 51, 10, 1) 13%, rgba(254, 67, 16, 1) 34%, rgba(255, 152, 50, 1) 81%);
+        border-radius: 50px;
+        position: absolute;
+        top: 10vh;
+        right: -5vh;
+    }
+
+    /* page2 ::::::::::::::::::::::::::::::: */
+    .page2 {
+        min-height: 70vh !important;
+        width: 100%;
+        background-color: #EFEAE3;
+        position: relative;
+        padding-top: 4vw;
+    }
+
+    .con {
+        white-space: nowrap;
+        display: inline-block;
+        animation: move 10s linear infinite;
+    }
+
+    #moving-text h1 {
+        font-size: 10vw;
+    }
+
+    #gola {
+        height: 25px;
+        width: 25px;
+    }
+
+    .page2-bottom {
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .b-left {
+        height: 50%;
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+    .b-left .text {
+        position: absolute;
+        height: 50%;
+        width: 90%;
+        z-index: 11;
+    }
+
+    .b-left .text h1 {
+        padding-top: 9.5vw;
+        font-family: "med-text";
+        font-size: 6.5vw;
+        text-align: left;
+        letter-spacing: -1px;
+        line-height: 6.6vw;
+    }
+
+    .shape-s1 {
+        height: 50vw;
+        width: 50vw;
+        border-radius: 50%;
+        filter: blur(5px);
+        background: rgb(255, 123, 52);
+        background: linear-gradient(90deg, rgba(254, 51, 10, 1) 0%, rgba(254, 67, 16, 1) 34%, rgba(255, 152, 50, 1) 81%);
+        position: absolute;
+        top: 30%;
+        left: 60%;
+        animation: loopshape2 4s linear infinite;
+        animation-direction: alternate;
+    }
+
+    .shape-s2 {
+        height: 46vw;
+        width: 46vw;
+        border-radius: 50%;
+        filter: blur(15px);
+        background: rgb(254, 51, 10);
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        animation: loopshape2 4s linear infinite;
+        animation-direction: alternate;
+    }
+
+
+    @keyframes loopshape1 {
+        from {
+            transform: translate(7%, -7%)skew(0deg);
+        }
+
+        to {
+            transform: translate(-5%, 5%)skew(10deg);
+        }
+
+    }
+
+    @keyframes loopshape2 {
+        from {
+            transform: translate(5%, -5%)skew(10deg);
+        }
+
+        to {
+            transform: translate(-5%, 5%)skew(0deg);
+        }
+
+    }
+
+    .b-left h5 {
+        bottom: 3vw;
+        gap: 1vw;
+        font-size: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    .b-left h5 #round {
+        height: 8px;
+        width: 8px;
+        background-color: #FE330A;
+        border-radius: 50%;
+    }
+
+    .b-right {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4vw;
+        position: relative;
+        z-index: 11;
+        align-items: flex-start;
+        padding-left: 18px;
+    }
+
+    .b-right .images {
+        margin-top: 10px
+    }
+
+    .b-right .images img {
+        height: 150px;
+        width: 250px;
+        border-radius: 10px;
+    }
+
+    .b-right p {
+        height: 170px;
+        width: 252px;
+        font-family: "low-text";
+        font-size: 3vw;
+    }
+
+
+    /* page3 ::::::::::::::::::::::::::::::: */
+    .page3 {
+        min-height: 80vh;
+        width: 100%;
+        background-color: #EFEAE3;
+    }
+
+    .fix-image {
+        height: 28vw;
+        width: 22vw;
+        border-radius: 10px;
+        left: 50%;
+        top: 20%;
+    }
+
+
+    .page3 .elem {
+        padding-inline: 3vw;
+        height: 10vh;
+    }
+
+    .elem h1 {
+        font-size: 5vw;
+    }
+
+    .elem .elem-right h5 {
+        font-size: 2vw;
+    }
+
+    .elem .elem-right h5:nth-child(2) {
+        font-size: 1.8vw;
+    }
+
+    .page3-button {
+        height: 10vh;
+        padding: 2vw 2vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .page3 h4 {
+        font-size: 3vw;
+    }
+
+
+    /* page4 ::::::::::::::::::::::::::::::: */
+    .page4 {
+        height: 80vh;
+        padding: 3vw 3vw;
+        width: 100%;
+        background-color: #EFEAE3;
+    }
+
+    .mywork {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: #0b0500;
+        border-radius: 30px;
+    }
+
+    .work-left {
+        height: 40%;
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+        color: white;
+    }
+
+    .workname {
+        margin-top: 5vw;
+        margin-left: 10vw;
+        cursor: pointer;
+        font-family: "med-text";
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .workname h1 {
+        font-size: 7vw;
+    }
+
+    .workinfo p {
+        /* margin-inline: 30vw; */
+        font-family: "low-text";
+        font-size: 3vw;
+
+    }
+
+    .work-right {
+        width: 100%;
+        height: 60%;
+        top: 40%;
+        left: 0;
+    }
+
+
+    /* page5 ::::::::::::::::::::::::::::::: */
+    .page5 {
+        height: 40vh;
+        width: 100%;
+        background-color: #EFEAE3;
+    }
+
+    .page5 h5 {
+        gap: 1vw;
+        font-size: 2.5vw;
+    }
+
+    .swiper {
+        margin-top: 3vw;
+        height: 80%;
+        padding-top: 15vh;
+        width: 1000px;
+    }
+
+    .content p {
+        margin-top: 2vw;
+        font-size: 3vw;
+    }
+
+
+    /* page6 ::::::::::::::::::::: */
+    .page6 {
+        height: 60vh;
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    /* footer:::::::::::::::::::::: */
+    footer {
+        height: 60vh;
+    }
+
+    footer .top {
+        height: 70%;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .top h3 {
+        margin-top: 1vw;
+        font-family: "med-text";
+        font-size: 7vw;
+        padding: 0px 3vw;
+    }
+
+    .top-right {
+        padding-right: 3vw;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+
+    }
+
+    .top h4 {
+        width: 70%;
+        font-family: "low-text";
+        font-size: 4vw;
+    }
+
+    .top-right .submit {
+        width: 100%;
+    }
+
+    .top #email {
+        padding: 4px 2px;
+        border: none;
+        background-color: transparent;
+    }
+
+    footer .bot {
+        height: 10%;
+        flex-wrap: wrap;
+    }
+
+    .bot h5 {
+        font-family: "low-text";
+        font-size: 2vw;
+        color: white;
+    }
+
+    .foote-shape .fshap1 {
+        top: -5%;
+        left: -30%;
+        filter: blur(15px);
+    }
+
+    .foote-shape .fshap2 {
+        border-bottom-left-radius: 40%;
+        filter: blur(15px);
+        height: 70%;
+        width: 100%;
+        top: -20%;
+        right: -30%;
+    }
 
 }

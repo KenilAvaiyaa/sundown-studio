@@ -136,3 +136,35 @@ function swap() {
     });
 }
 swap()
+
+
+// menubar
+function menulode(){
+var menu = document.querySelector("nav h3")
+var nevbar = document.querySelector("nav")
+var menuicon1 = document.querySelector("#m1")
+var menuicon2 = document.querySelector("#m2")
+var full = document.querySelector(".fixmenu")
+var navimg = document.querySelector("nav img")
+let note = 0
+menu.addEventListener("click", function () {
+        if (note == 0) {
+            full.style.top = 0
+            menuicon1.style.display="none"
+            menuicon2.style.display="block"
+            navimg.style.opacity = 0
+            nevbar.style.borderBottom = "0.2px solid #504B45"
+            note = 1
+        } 
+        else 
+        {
+            full.style.top = "-100%"
+            menuicon1.style.display="block"
+            menuicon2.style.display="none"
+            navimg.style.opacity = 1
+            note = 0
+            nevbar.style.borderBottom = "none"
+        }
+    })
+ }
+menulode()
