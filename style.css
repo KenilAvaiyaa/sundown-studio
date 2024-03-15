@@ -678,6 +678,8 @@ nav h3 {
 
 .swiper {
     padding-top: 2vw;
+    width: 100%;
+    height: 100%;
 }
 
 .swiper-slide {
@@ -913,6 +915,9 @@ footer .bot {
     /* loder */
     .loder h1 {
         font-size: 3em;
+    }
+    .main{
+        overflow: hidden;
     }
     /* page1 ::::::::::::::::::::::::::::::: */
     .page1 {
@@ -1168,12 +1173,13 @@ footer .bot {
     }
 
     .b-right {
+        margin-bottom: 4vw;
         height: 50%;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 4vw;
+        gap: 1vw;
         position: relative;
         z-index: 11;
         align-items: flex-start;
@@ -1304,8 +1310,8 @@ footer .bot {
 
     /* page5 ::::::::::::::::::::::::::::::: */
     .page5 {
-        height: 40vh;
-        width: 100%;
+        height: 35vh;
+        min-width: 100% !important;
         background-color: #EFEAE3;
     }
 
@@ -1318,14 +1324,27 @@ footer .bot {
         margin-top: 3vw;
         height: 80%;
         padding-top: 15vh;
-        width: 250%;
+        min-width: 100vw;
+    }
+
+    /* .content p {
+        margin-top: 2vw;
+        font-size: 3vw;
+    } */
+
+    
+    .swiper-slide .content {
+        border-left: 1px solid #BFBBB5; 
+      }
+    
+    .content img{
+        height: 50px;
+        width: 60px;
     }
 
     .content p {
-        margin-top: 2vw;
-        font-size: 3vw;
-    }
-
+        font-size: 7px;  
+      }
 
     /* page6 ::::::::::::::::::::: */
     .page6 {
@@ -1337,6 +1356,7 @@ footer .bot {
     /* footer:::::::::::::::::::::: */
     footer {
         height: 60vh;
+        width: 100%;
     }
 
     footer .top {
